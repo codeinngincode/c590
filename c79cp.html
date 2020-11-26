@@ -1,0 +1,126 @@
+<html>
+
+<head>
+
+    <title></title>
+    <link href="c79cp.css" rel="stylesheet">
+    <script src="c79cp.js"></script>
+    
+
+</head>
+
+    <body>
+
+        <h1>Hi</h1>
+
+        <h1>List of students</h1>
+
+        <h1>BYE LEAVE DO NOT USE</h1>
+        
+        <div>
+            
+            <span>
+
+                No:1
+
+            </span>
+            <input type="text" placeholder="name the student" id="idiot1">
+
+            <br>
+            
+            <br>
+
+            <span>
+
+                No:2
+
+            </span>
+
+            <input type="text" placeholder="name the student" id="idiot2">
+
+            <br>
+            
+            <br>
+
+            <span>
+
+                No:3
+
+            </span>
+
+            <input type="text" placeholder="name the student" id="idiot3">
+
+            <br>
+            
+            <br>
+
+            <span>
+
+                No:4
+
+            </span>
+            <input type="text" placeholder="name the student" id="idiot4">
+
+            <br>
+            
+            <br>
+
+            <button onclick="submit()" id="submit">sumit</button>
+
+            <div id="dismame">
+            </div>
+
+            <div id="display_name_with_commas">
+                
+            </div>
+            
+            <hr>
+            
+            <div id="display_name_without_commas">
+            </div>
+
+            <button onclick="unsort()" id="unsort">
+            
+                sorted
+            
+            </button>
+
+        </div>
+
+        <script>
+            
+            var stuntname=[];
+
+            function submit(){
+
+                var name1=document.getElementById("idiot1").value;
+
+                var name2=document.getElementById("idiot2").value;
+
+                var name3=document.getElementById("idiot3").value;
+
+                var name4=document.getElementById("idiot4").value;
+
+                stuntname.push(name1,name2,name3,name4);
+
+                document.getElementById("dismame").innerHTML=stuntname;
+                
+                document.getElementById("submit").style.display="none";
+
+                document.getElementById("unsort").style.display="inline-block";
+                
+            }
+
+            function unsort(){
+
+                stuntname.sort();
+
+                document.getElementById("dismame").innerHTML=stuntname;
+                
+            }
+
+        </script>
+
+    </body>
+
+</html>
