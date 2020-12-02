@@ -1,22 +1,33 @@
 .body_backgorund {
-	background-image: url("https://i.postimg.cc/63cjmfvH/bg1.jpg");
-	background-position: center;
-	background-size: cover;
+    background-image: url("https://i.postimg.cc/63cjmfvH/bg1.jpg");
+    background-position: center;
+    background-size: cover;
+  }
+  body{
+    cursor: pointer;
   }
   h1
   {
-	  color: red; 
-	  font-size: 40px;
+      color: red; 
+      font-size: 20px;
   }
-  
   #myCanvas
   {
-  
-	  background-color: white; 
-	  border-style:ridge;
+      border-width:10px;
+      background-color: white; 
+      border-style:ridge;
   }
-  span
+
+  button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 42px;
+    font-size: 16px;
+  }
+
+  input
   {
-	  font-size: 20px;
+    margin-right: 20px;
   }
   
